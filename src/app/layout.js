@@ -1,4 +1,5 @@
 import Header from './_components/UI/Header';
+import Footer from './_components/UI/Footer';
 import './globals.css';
 
 export const metadata = {
@@ -9,10 +10,11 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <body className='bg-purple text-bteal'>
+      <body className='bg-purple text-white'>
         <Header />
         {children}
         <div id='portal'/>
+        <Footer />
       </body>
     </html>
   );
