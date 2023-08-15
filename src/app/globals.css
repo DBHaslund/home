@@ -4,9 +4,41 @@
 
 :root {
   --gray: #242424;
-  --bteal: #01F9C6;
+  --bteal: #01f9c6;
   --cteal: #009193;
   --cyan: #0096aa;
   --purple: #7300ab;
   --dpurple: #430064;
 }
+
+body {
+  background: #202020;
+  color: #a6a6a6;
+}
+
+/* .menu-button {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  --button-color: #111;
+  overflow: hidden;
+}
+
+.menu-button .hamburger {
+  transition: 1s;
+}
+
+.menu-button[aria-expanded="true"] .hamburger {
+  translate: 10px -10px;
+  rotate: .125turn;
+}
+
+.menu-button .line {
+  transition: 1s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.menu-button[aria-expanded="true"] .line {
+  stroke-dasharray: 60 100 60 300;
+  stroke-dashoffset: -90;
+} */

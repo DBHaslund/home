@@ -1,14 +1,36 @@
-import ContactForm from '../ContactForm/ContactForm';
+import Image from 'next/image';
+import linkedinLogo from '../../_assets/svg/linkedin.svg';
+import githubLogo from '../../_assets/svg/github.svg';
 
 const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
     <footer>
-      <ContactForm />
-      <p className='text-center'>
-        Created by Dennis Haslund <span>{year}</span>
-      </p>
+      <div className='py-[2px] bg-gradient-to-r from-purple via-bteal to-purple'></div>
+      <div className='flex justify-between px-4 py-8'>
+        <p className=''>
+          Created by <br />
+          Dennis Haslund <span>{year}</span>
+        </p>
+        <div className='flex'>
+          <a href='https://github.com'>
+            <Image
+              src={githubLogo}
+              alt='Github logo'
+              className='w-12 mx-1'
+            ></Image>
+          </a>
+          <a href='https://linkedin.com' className=''>
+            <Image
+              src={linkedinLogo}
+              alt='LinkedIn logo'
+              className='w-12 mx-1'
+            ></Image>
+          </a>
+        </div>
+      </div>
+      {/* <div className='pb-1 md:via-purple bg-gradient-to-r from-purple via-bteal to-purple'></div> */}
     </footer>
   );
 };

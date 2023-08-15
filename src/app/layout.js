@@ -10,7 +10,7 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
-      <body className='bg-purple text-white'>
+      <body className=''>
         <Header />
         {children}
         <div id='portal'/>

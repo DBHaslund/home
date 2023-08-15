@@ -35,7 +35,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <div className='flex w-full justify-between text-3xl mt-8 md:justify-center md:text-2xl'>
+        <div className='flex w-full justify-between text-3xl bg-transparent pb-8 md:pb-0 mt-8 md:justify-center md:text-2xl'>
           <span className='mx-8'>DBHaslund</span>
           <button
             onClick={mobileMenuHandler}

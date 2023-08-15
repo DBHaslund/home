@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "../react-projects"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../stuff/crl"
+		}
+	],
+  "settings": {
+    "emmet.preferences": {},
+    "emmet.syntaxProfiles": {},
+    "liveServer.settings.multiRootWorkspaceName": "crl"
+  }
+}
