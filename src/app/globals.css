@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --gray: #242424;
+  --dark-gray: #1e1e1e;
+  --gray: #3c3c3c;
+  --light-gray: #a6a6a6;
   --bteal: #01f9c6;
   --cteal: #009193;
   --cyan: #0096aa;
@@ -12,7 +14,7 @@
 }
 
 body {
-  background: #202020;
+  background: #1e1e1e;
   color: #a6a6a6;
 }
 

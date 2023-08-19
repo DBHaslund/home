@@ -16,39 +16,35 @@ const Header = () => {
   };
 
   const portalElement = document.getElementById('portal');
-  
 
   const menuLinks = (
     <>
-      <li>
-        <Link href='/'>Home</Link>
-      </li>
-      <li>
-        <Link href='/projects'>Projects</Link>
-      </li>
-      <li>
-        <Link href='/contact'>Contact</Link>
-      </li>
+      <Link href='/'>Home</Link>
+      <Link href='/projects'>Projects</Link>
+      <Link href='/contact'>Contact</Link>
     </>
   );
 
   return (
     <>
-      <header>
-        <div className='flex w-full justify-between text-3xl bg-transparent pb-8 md:pb-0 mt-8 md:justify-center md:text-2xl'>
+      <header className='bg-gray p-6 md:w-2/5 md:min-w-[335px] md: rounded-b-xl m-auto font-semibold'>
+        <div className='flex w-full justify-between text-3xl md:hidden'>
           <span className='mx-8'>DBHaslund</span>
           <button
             onClick={mobileMenuHandler}
-            className='md:invisible md:mx-0 mx-8'
+            className='mx-8'
           >
             <FaBars />
           </button>
         </div>
         <NavBar menuLinks={menuLinks} />
       </header>
-      {mobileMenu && portalElement ? createPortal(
-        <MobileMenu menuLinks={menuLinks} menuButton={mobileMenuHandler} />, portalElement
-      ) : null}
+      {mobileMenu && portalElement
+        ? createPortal(
+            <MobileMenu menuLinks={menuLinks} menuButton={mobileMenuHandler} />,
+            portalElement
+          )
+        : null}
     </>
   );
 };

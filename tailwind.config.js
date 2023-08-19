@@ -13,7 +13,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'dgray': 'var(--dark-gray)',
         'gray': 'var(--gray)',
+        'lgray': 'var(--light-gray)',
         'bteal': 'var(--bteal)',
         'cteal': 'var(--cteal)',
         'purple': 'var(--purple)',

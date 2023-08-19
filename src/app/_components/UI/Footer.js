@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import linkedinLogo from '../../_assets/svg/linkedin.svg';
-import githubLogo from '../../_assets/svg/github.svg';
+// import linkedinLogo from '/assets/linkedin.svg';
+// import githubLogo from '/assets/github.svg';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -16,15 +16,19 @@ const Footer = () => {
         <div className='flex'>
           <a href='https://github.com'>
             <Image
-              src={githubLogo}
+              src='/assets/github.svg'
               alt='Github logo'
+              width={100}
+              height={100}
               className='w-12 mx-1'
             ></Image>
           </a>
           <a href='https://linkedin.com' className=''>
             <Image
-              src={linkedinLogo}
+              src='/assets/linkedin.svg'
               alt='LinkedIn logo'
+              width={100}
+              height={100}
               className='w-12 mx-1'
             ></Image>
           </a>
