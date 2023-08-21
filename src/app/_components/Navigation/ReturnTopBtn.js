@@ -1,11 +1,14 @@
 'use client';
 import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { motion, useScroll, useAnimationControls } from 'framer-motion';
 import { FaArrowUp } from 'react-icons/fa6';
 
 const ReturnTopBtn = () => {
   const { scrollYProgress } = useScroll();
   const controls = useAnimationControls();
+  const router = useRouter();
 
   const ScrollToTopContainerVariants = {
     hide: { opacity: 0, y: 10 },
@@ -14,10 +17,9 @@ const ReturnTopBtn = () => {
 
   useEffect(() => {
     return scrollYProgress.on('change', (latestValue) => {
-      console.log(latestValue)
       if (latestValue > 0.5) {
         controls.start('show');
-      } 
+      }
       if (latestValue < 0.5) {
         controls.start('hide');
       }
@@ -26,10 +28,10 @@ const ReturnTopBtn = () => {
 
   const isBrowser = () => typeof window !== 'undefined';
 
-  function scrollToTop() {
+  const scrollToTop = async () => {    
     if (!isBrowser()) return;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  };
 
   return (
     <motion.button

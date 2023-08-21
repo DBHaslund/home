@@ -11,6 +11,7 @@
   --cyan: #0096aa;
   --purple: #7300ab;
   --dpurple: #430064;
+  scroll-behavior: smooth !important;
 }
 
 @layer components {

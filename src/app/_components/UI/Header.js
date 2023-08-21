@@ -19,9 +19,9 @@ const Header = () => {
 
   const menuLinks = (
     <>
-      <Link href='/' scroll={false}>Home</Link>
-      <Link href='#projects' scroll={false}>Projects</Link>
-      <Link href='#contact' scroll={false}>Contact</Link>
+      <Link href='/' scroll={false} replace>Home</Link>
+      <Link href='#projects' scroll={false} replace>Projects</Link>
+      <Link href='#contact' scroll={false} replace>Contact</Link>
     </>
   );
 
@@ -30,10 +30,7 @@ const Header = () => {
       <header className='bg-gray p-6 border-cteal md:border-x-2 md:border-b-2 md:w-2/5 md:min-w-[335px] md:rounded-b-xl m-auto font-semibold'>
         <div className='flex w-full justify-between text-3xl md:hidden'>
           <span className='mx-8'>DBHaslund</span>
-          <button
-            onClick={mobileMenuHandler}
-            className='mx-8'
-          >
+          <button onClick={mobileMenuHandler} className='mx-8'>
             <FaBars />
           </button>
         </div>

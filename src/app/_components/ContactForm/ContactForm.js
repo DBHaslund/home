@@ -8,9 +8,19 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data, e) => console.log(data, e);
+  const onSubmit = async (data) => {
+    let response = await fetch('http://localhost:5000/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify(data),
+    });
+    let result = await response.json();
+    alert(result.status);
+  };
 
-  const onError = (errors, e) => console.log(errors, e);
+  const onError = (errors) => console.log(errors);
 
   return (
     <form
