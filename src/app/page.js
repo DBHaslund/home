@@ -1,6 +1,7 @@
-import Intro from './_components/Sections/Intro/Intro';
-import Contact from './_components/Sections/Contact/Contact';
-import Projects from './_components/Sections/Projects/Projects';
+import Intro from './_components/Sections/Intro';
+import Contact from './_components/Sections/Contact';
+import Projects from './_components/Sections/Projects';
+import ReturnTopBtn from './_components/Navigation/ReturnTopBtn';
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
       <Intro />
       <Projects />
       <Contact />
+      <ReturnTopBtn />      
     </main>
   );
 };

@@ -1,5 +1,6 @@
 import Header from './_components/UI/Header';
 import Footer from './_components/UI/Footer';
+
 import './globals.css';
 
 export const metadata = {
@@ -9,8 +10,8 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang='en'>
-      <body className=''>
+    <html lang='en' className='scroll-smooth'>
+      <body >
         <Header />
         {children}
         <div id='portal'/>

@@ -13,6 +13,16 @@
   --dpurple: #430064;
 }
 
+@layer components {
+  .section {
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+    margin: 4rem;
+    padding: 4rem 0;
+  }
+}
+
 body {
   background: #1e1e1e;
   color: #a6a6a6;

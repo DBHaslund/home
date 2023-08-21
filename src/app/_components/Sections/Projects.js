@@ -1,10 +1,11 @@
-import Project from '../../Project/Project';
-import Section from '../../UI/Section';
+import Project from '../Project/Project';
+import Section from '../UI/Section';
 
 const Projects = () => {
   const projectList = [
     {
       id: 'portfolio',
+      key: 'portfolio',
       name: 'Portfolio',
       url: 'https://bzyhas.com',
       repo: 'https://github.com/DBHaslund/home',
@@ -28,6 +29,7 @@ const Projects = () => {
     <>
       <Project
         id={project.id}
+        key={project.key}
         name={project.name}
         url={project.url}
         repo={project.repo}
@@ -39,7 +41,7 @@ const Projects = () => {
   ));
 
   return (
-    <Section>
+    <Section id='projects'>
       <h2 className='text-center text-3xl font-semibold'>Projects</h2>
       <div className='flex flex-wrap justify-around gap-8'>{content}</div>
     </Section>

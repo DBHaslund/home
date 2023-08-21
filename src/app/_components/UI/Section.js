@@ -1,5 +1,7 @@
-const Section = ({ children }) => {
-  return <section className='w-full bg-gray rounded-lg m-8 p-8'>{children}</section>;
+const Section = ({ children, id, className }) => {
+  const classes = `${className} section`
+
+  return <section className={classes} id={id}>{children}</section>;
 };
 
 export default Section;
