@@ -1,12 +1,12 @@
 'use client';
 import { useState } from 'react';
-import { createPortal } from 'react-dom';
 import Link from 'next/link';
 
 import { FaBars } from 'react-icons/fa';
 
 import NavBar from '../Navigation/NavBar';
 import MobileMenu from '../Navigation/MobileMenu';
+import Portal from './Portal';
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -15,13 +15,17 @@ const Header = () => {
     setMobileMenu(!mobileMenu);
   };
 
-  const portalElement = document.getElementById('portal');
-
   const menuLinks = (
     <>
-      <Link href='/' scroll={false} replace>Home</Link>
-      <Link href='#projects' scroll={false} replace>Projects</Link>
-      <Link href='#contact' scroll={false} replace>Contact</Link>
+      <Link href='/' scroll={false} replace>
+        Home
+      </Link>
+      <Link href='#projects' scroll={false} replace>
+        Projects
+      </Link>
+      <Link href='#contact' scroll={false} replace>
+        Contact
+      </Link>
     </>
   );
 
@@ -36,12 +40,11 @@ const Header = () => {
         </div>
         <NavBar menuLinks={menuLinks} />
       </header>
-      {mobileMenu && portalElement
-        ? createPortal(
-            <MobileMenu menuLinks={menuLinks} menuButton={mobileMenuHandler} />,
-            portalElement
-          )
-        : null}
+      {mobileMenu && (
+        <Portal>
+          <MobileMenu menuLinks={menuLinks} menuButton={mobileMenuHandler} />
+        </Portal>
+      )}
     </>
   );
 };
