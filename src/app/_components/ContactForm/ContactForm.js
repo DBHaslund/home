@@ -1,24 +1,46 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
+import sendMail from '../../_utils/sendMail';
 
 const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
+    formState,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (data) => {
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(data),
-    });
-    let result = await response.json();
-    alert(result.status);
+  const [responseMessage, setResponseMessage] = useState({
+    isSuccessful: false,
+    message: '',
+  });
+
+  const onSubmit = async (data, e) => {
+    e.preventDefault();
+
+    try {
+      const req = await sendMail(data.email, data.name, data.message);
+      if (req.status === 250) {
+        setResponseMessage({
+          isSuccessful: true,
+          message: 'Thank you for your message.',
+        });
+      }
+    } catch (e) {
+      setResponseMessage({
+        isSuccessful: false,
+        message: 'Oops something went wrong. Please try again.',
+      });
+    }
   };
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset();
+    }
+  });
 
   const onError = (errors) => console.log(errors);
 
