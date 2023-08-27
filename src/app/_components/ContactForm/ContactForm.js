@@ -56,7 +56,8 @@ const ContactForm = () => {
           id='name'
           {...register('name', { required: 'Please enter your name.' })}
           autoComplete='name'
-          className='w-full p-1 rounded drop-shadow bg-dgray'
+          placeholder='Name'
+          className='w-full p-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
         <label htmlFor='email'>{errors.email?.message || 'Email'}</label>
         <input
@@ -64,18 +65,20 @@ const ContactForm = () => {
           id='email'
           {...register('email', { required: 'Please enter a valid email.' })}
           autoComplete='email'
-          className='w-full p-1 rounded drop-shadow bg-dgray'
+          placeholder='Email address'
+          className='w-full p-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
         <label htmlFor='message'>{errors.message?.message || 'Message'}</label>
         <textarea
           rows='5'
           id='message'
           {...register('message', { required: 'Please include a message.' })}
-          className='w-full p-1 rounded drop-shadow bg-dgray'
+          placeholder='Write your message...'
+          className='w-full p-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
         <button
           type='submit'
-          className='rounded drop-shadow py-2 px-4 my-2 bg-dgray block ml-auto'
+          className='rounded drop-shadow py-2 px-4 my-2 bg-dgray block ml-auto hover:text-white'
         >
           Send
         </button>

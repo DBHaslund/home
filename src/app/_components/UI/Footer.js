@@ -23,7 +23,7 @@ const Footer = () => {
               className='w-12 mx-1'
             ></Image>
           </a>
-          <a href='https://linkedin.com' className=''>
+          <a href='https://linkedin.com'>
             <Image
               src='/assets/linkedin.svg'
               alt='LinkedIn logo'

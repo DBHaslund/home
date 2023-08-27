@@ -5,7 +5,6 @@ const Projects = () => {
   const projectList = [
     {
       id: 'portfolio',
-      key: 'portfolio',
       name: 'Portfolio',
       url: 'https://bzyhas.com',
       repo: 'https://github.com/DBHaslund/home',
@@ -26,18 +25,15 @@ const Projects = () => {
   ];
 
   let content = projectList.map((project) => (
-    <>
-      <Project
-        id={project.id}
-        key={project.key}
-        name={project.name}
-        url={project.url}
-        repo={project.repo}
-        description={project.description}
-        slide={project.slide}
-        alt={project.alt}
-      />
-    </>
+    <Project
+      key={project.id}
+      name={project.name}
+      url={project.url}
+      repo={project.repo}
+      description={project.description}
+      slide={project.slide}
+      alt={project.alt}
+    />
   ));
 
   return (

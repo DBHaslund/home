@@ -20,7 +20,7 @@ export const POST = (req, res) => {
   });
 
   try {
-    console.log(req)
+    console.log(req.body)
     contactEmail.sendMail(message);
     return NextResponse.json({ message: 'Message sent', success: true, response: res });
   } catch (err) {
