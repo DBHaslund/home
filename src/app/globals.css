@@ -29,6 +29,10 @@ body {
   color: #a6a6a6;
 }
 
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
 /* .menu-button {
   margin-top: 2rem;
   background-color: transparent;

@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 
 export const POST = async (req, res) => {
   let body = await req.json();
-  
+
   const composedMessage = {
     from: process.env.EMAIL_SEND,
     to: process.env.EMAIL_RECIEVE,
@@ -23,7 +23,11 @@ export const POST = async (req, res) => {
 
   try {
     contactEmail.sendMail(composedMessage);
-    return NextResponse.json({ message: 'Message sent', success: true, response: res });
+    return NextResponse.json({
+      message: 'Message sent',
+      success: true,
+      response: res,
+    });
   } catch (err) {
     return NextResponse.json({ message: err, success: false, response: res });
   }
