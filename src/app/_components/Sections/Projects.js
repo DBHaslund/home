@@ -39,7 +39,7 @@ const Projects = () => {
   return (
     <Section id='projects'>
       <h2 className='text-center text-3xl font-semibold'>Projects</h2>
-      <div className='flex flex-wrap justify-around gap-8'>{content}</div>
+      <div className='flex flex-wrap justify-center gap-16 px-8'>{content}</div>
     </Section>
   );
 };
