@@ -10,7 +10,7 @@ const Home = () => {
       <Intro />
       {/* <About /> */}
       <Projects />
-      {/* <Contact /> */}
+      <Contact />
       <ReturnTopBtn />      
     </main>
   );
