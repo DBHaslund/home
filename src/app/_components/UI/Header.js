@@ -17,13 +17,13 @@ const Header = () => {
 
   const menuLinks = (
     <>
-      <Link href='/' scroll={false} replace className='hover:text-white'>
+      <Link href='/' onClick={mobileMenuHandler} replace shallow className='hover:text-white'>
         Home
       </Link>
-      <Link href='#projects' scroll={false} replace className='hover:text-white'>
+      <Link href='#projects' onClick={mobileMenuHandler} replace shallow className='hover:text-white'>
         Projects
       </Link>
-      <Link href='#contact' scroll={false} replace className='hover:text-white'>
+      <Link href='#contact' onClick={mobileMenuHandler} replace shallow className='hover:text-white'>
         Contact
       </Link>
     </>

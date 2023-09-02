@@ -6,11 +6,11 @@ import ReturnTopBtn from './_components/Navigation/ReturnTopBtn';
 
 const Home = () => {
   return (
-    <main className='flex min-h-[80vh] flex-col items-center justify-between px-24 py-12'>
+    <main className='flex flex-col items-center justify-between py-12'>
       <Intro />
       {/* <About /> */}
       <Projects />
-      <Contact />
+      {/* <Contact /> */}
       <ReturnTopBtn />      
     </main>
   );

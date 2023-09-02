@@ -68,31 +68,31 @@ const ContactForm = () => {
       className='mx-auto my-8 text-xl p-2 bg-gray rounded-lg flex-col'
     >
       <div className='w-4/5 max-w-md mx-auto py-4'>
-        <label htmlFor='name' className='ml-2'>{errors.name?.message || 'Name'}</label>
+        <label htmlFor='name' className=''>{errors.name?.message || 'Name'}</label>
         <input
           type='text'
           id='name'
           {...register('name', { required: 'Please enter your name.' })}
           autoComplete='name'
           placeholder='Name'
-          className='w-full p-2 mb-2 rounded drop-shadow bg-dgray placeholder:opacity-40'
+          className='w-full px-4 py-2 mb-2 mt-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
-        <label htmlFor='email' className='ml-2'>{errors.email?.message || 'Email'}</label>
+        <label htmlFor='email' className=''>{errors.email?.message || 'Email'}</label>
         <input
           type='email'
           id='email'
           {...register('email', { required: 'Please enter a valid email.' })}
           autoComplete='email'
           placeholder='Email address'
-          className='w-full p-2 mb-2 rounded drop-shadow bg-dgray placeholder:opacity-40'
+          className='w-full px-4 py-2 mb-2 mt-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
-        <label htmlFor='message' className='ml-2'>{errors.message?.message || 'Message'}</label>
+        <label htmlFor='message' className=''>{errors.message?.message || 'Message'}</label>
         <textarea
           rows='5'
           id='message'
           {...register('message', { required: 'Please include a message.' })}
           placeholder='Write your message...'
-          className='w-full p-2 mb-2 rounded drop-shadow bg-dgray placeholder:opacity-40'
+          className='w-full px-4 py-2 mb-2 mt-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
         <div className='flex'>
           <p className='w-62 text-xs w-2/3'>
