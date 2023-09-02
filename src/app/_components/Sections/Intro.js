@@ -4,13 +4,13 @@ import Section from '../UI/Section';
 const Intro = () => {
   return (
     <Section className='py-32 bg-transparent'>
-      <div className='relative'>
+      <div className='relative'>        
         <Image
           src='/assets/pfp.png'
           alt='profile picture'
           width={100}
           height={100}
-          className='mx-auto border-collapse mt-12 mb-32 pfp rounded-full'
+          className='mx-auto mt-12 mb-32 pfp rounded-full'
         />
         <svg
           fill='white'
