@@ -14,7 +14,7 @@ const Footer = () => {
           Dennis Haslund <span>{year}</span>
         </p>
         <div className='flex'>
-          <a href='https://github.com'>
+          <a href='https://github.com/DBHaslund'>
             <Image
               src='/assets/github.svg'
               alt='Github logo'
@@ -23,7 +23,7 @@ const Footer = () => {
               className='w-12 mx-1'
             ></Image>
           </a>
-          <a href='https://linkedin.com'>
+          <a href='https://www.linkedin.com/in/dennis-haslund-b4809b290?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BTxPxPh7cQs2GnxGmRQwdag%3D%3D'>
             <Image
               src='/assets/linkedin.svg'
               alt='LinkedIn logo'

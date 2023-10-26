@@ -9,7 +9,7 @@ const Projects = () => {
       url: 'https://bzyhas.com',
       repo: 'https://github.com/DBHaslund/home',
       description: 'My own portfolio, built using NextJS, React and Tailwind.',
-      slide: '/assets/portfolio.png',
+      slide: '/assets/projects/portfolio.png',
       alt: 'Snapshot of my portfolio',
     },
     {
@@ -21,6 +21,26 @@ const Projects = () => {
         'A simplified recreation of the classic game Pong, written in javascript utilising canvas. The first real project I coded. Non-responsive, doesnt work on mobile as of now.',
       slide: '/assets/projects/pong.png',
       alt: 'Snapshot of the pong game',
+    },
+    {
+      id: 'blog',
+      name: 'Blog Site',
+      url: 'https://blog.bzyhas.com',
+      repo: 'https://github.com/DBHaslund/blog',
+      description:
+        'Blog site built using a wp backend, NextJS, React and Tailwind.',
+      slide: '/assets/projects/blog.png',
+      alt: 'Snapshot of the blog site',
+    },
+    {
+      id: 'co2form',
+      name: 'CO2 Calculator',
+      url: 'https://h-daugaard.dk/om-os/co2-udledning/',
+      repo: '',
+      description:
+        'Form and result page built in regular javascript and css as a plugin for wordpress, interacting with an api for the results.',
+      slide: '/assets/projects/co2form.png',
+      alt: 'Snapshot of the form',
     },
   ];
 

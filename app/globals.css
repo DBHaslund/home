@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-gray: #1e1e1e;
+  --gray: #3c3c3c;
+  --light-gray: #a6a6a6;
+  --bteal: #01f9c6;
+  --cteal: #009193;
+  --cyan: #0096aa;
+  --purple: #7300ab;
+  --dpurple: #430064;
+  scroll-behavior: smooth !important;
+}
+
+@layer components {
+  .section {
+    width: 80%;
+    background-color: var(--gray);
+    border-radius: 0.5rem;
+    margin: 4rem;
+    padding: 4rem 0;
+  }
+
+  .pfp {
+    --pfp-main: color-mix(in srgb, #009193 50%, transparent);
+    --pfp-accent: color-mix(in srgb, #fff 90%, transparent);
+    background-color: var(--pfp-main);
+    box-shadow: 
+      0 0 20px 20px var(--pfp-main), 
+      0 0 0 18px #1e1e1e, 
+      0 0 0 20px var(--pfp-main),
+      0 0 0 0px #1e1e1e, 
+      0 0 0 0px var(--pfp-main), 
+      0 0 0px 0px var(--pfp-main);
+  }
+  .pfp-ani {
+    /* animation: duration, name, delay, repetition, timing */
+    animation: 5s pfp-ani 2s 1 linear;
+  }
+  @keyframes pfp-ani {
+    8% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 10px 20px var(--pfp-main);
+    }
+    10% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main);
+    }
+    18% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 10px 50px var(--pfp-main),
+        0 0 10px 52px var(--pfp-main);
+    }
+    20% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 20px 50px var(--pfp-main),
+        0 0 20px 52px var(--pfp-accent);
+    }
+    22% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 10px 50px var(--pfp-main),
+        0 0 10px 52px var(--pfp-accent);
+    }
+    26% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 10px 50px var(--pfp-main),
+        0 0 10px 52px var(--pfp-accent);
+    }
+    28% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 30px 50px var(--pfp-main),
+        0 0 30px 52px var(--pfp-accent);
+    }
+    46% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 10px 50px var(--pfp-main),
+        0 0 10px 52px var(--pfp-accent);
+    }
+    50% {
+      box-shadow: 
+        0 0 20px 20px var(--pfp-main), 
+        0 0 0 18px #1e1e1e, 
+        0 0 0 20px var(--pfp-main),
+        0 0 0 48px #1e1e1e, 
+        0 0 10px 50px var(--pfp-main),
+        0 0 10px 52px var(--pfp-accent);
+    }
+  }
+  /* .cross {
+    animation: rotate-animation 90s infinite linear;
+  }
+
+  @keyframes rotate-animation {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  .line-top {
+    rotate: 45deg;
+  }
+
+  .line-bot {
+    rotate: -45deg;
+  }
+
+  .pfp::before,
+  .pfp::after {
+    content: '';
+  } */
+}
+
+body {
+  background: #1e1e1e;
+  color: #a6a6a6;
+}
+
+.grecaptcha-badge {
+  visibility: hidden;
+}
+
+/* .menu-button {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  --button-color: #111;
+  overflow: hidden;
+}
+
+.menu-button .hamburger {
+  transition: 1s;
+}
+
+.menu-button[aria-expanded="true"] .hamburger {
+  translate: 10px -10px;
+  rotate: .125turn;
+}
+
+.menu-button .line {
+  transition: 1s;
+  stroke-dasharray: 60 31 60 300;
+}
+
+.menu-button[aria-expanded="true"] .line {
+  stroke-dasharray: 60 100 60 300;
+  stroke-dashoffset: -90;
+} */

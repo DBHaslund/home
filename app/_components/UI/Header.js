@@ -17,13 +17,40 @@ const Header = () => {
 
   const menuLinks = (
     <>
-      <Link href='/' onClick={mobileMenuHandler} replace shallow className='hover:text-white'>
+      <Link
+        href='/'
+        onClick={mobileMenuHandler}
+        replace
+        shallow
+        className='hover:text-white'
+      >
         Home
       </Link>
-      <Link href='#projects' onClick={mobileMenuHandler} replace shallow className='hover:text-white'>
+      <Link
+        href='#about'
+        onClick={mobileMenuHandler}
+        replace
+        shallow
+        className='hover:text-white'
+      >
+        About
+      </Link>
+      <Link
+        href='#projects'
+        onClick={mobileMenuHandler}
+        replace
+        shallow
+        className='hover:text-white'
+      >
         Projects
       </Link>
-      <Link href='#contact' onClick={mobileMenuHandler} replace shallow className='hover:text-white'>
+      <Link
+        href='#contact'
+        onClick={mobileMenuHandler}
+        replace
+        shallow
+        className='hover:text-white'
+      >
         Contact
       </Link>
     </>
@@ -31,10 +58,13 @@ const Header = () => {
 
   return (
     <>
-      <header className='bg-gray p-6 border-cteal md:border-x-2 md:border-b-2 md:w-2/5 md:min-w-[335px] md:rounded-b-xl m-auto font-semibold'>
+      <header className='bg-gray p-6 border-cteal md:border-x-2 md:border-b-2 md:w-2/5 md:min-w-[410px] md:max-w-[500px] md:rounded-b-xl m-auto font-semibold'>
         <div className='flex w-full justify-between text-3xl md:hidden'>
           <span className='mx-8'>DBHaslund</span>
-          <button onClick={mobileMenuHandler} className='mx-8'>
+          <button
+            onClick={mobileMenuHandler}
+            className={`mx-8 transition-opacity ease-in duration-500 opacity-100 ${mobileMenu && 'opacity-0'}`}
+          >
             <FaBars />
           </button>
         </div>
