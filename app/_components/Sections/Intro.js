@@ -1,13 +1,11 @@
-
-'use client'
+'use client';
 import Image from 'next/image';
 import Section from '../UI/Section';
 
 const Intro = () => {
-
   return (
     <Section className='py-32 bg-transparent'>
-      <div className='relative'>        
+      <div className='relative'>
         <Image
           src='/assets/pfp.png'
           alt='profile picture'

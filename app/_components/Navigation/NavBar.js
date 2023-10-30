@@ -1,9 +1,8 @@
 const NavBar = (props) => {
   return (
-      <nav className='hidden md:flex justify-center gap-12'>
-        {props.menuLinks}
-      </nav>
-    
+    <nav className='hidden md:flex justify-center gap-12'>
+      {props.menuLinks}
+    </nav>
   );
 };
 

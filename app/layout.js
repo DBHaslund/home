@@ -11,10 +11,10 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang='en' className=''>
-      <body >
+      <body>
         <Header />
         {children}
-        <div id='portal'/>
+        <div id='portal' />
         <Footer />
       </body>
     </html>

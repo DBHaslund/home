@@ -68,7 +68,9 @@ const ContactForm = () => {
       className='mx-auto my-8 text-xl p-2 bg-gray rounded-lg flex-col'
     >
       <div className='w-4/5 max-w-md mx-auto py-4'>
-        <label htmlFor='name' className=''>{errors.name?.message || 'Name'}</label>
+        <label htmlFor='name' className=''>
+          {errors.name?.message || 'Name'}
+        </label>
         <input
           type='text'
           id='name'
@@ -77,7 +79,9 @@ const ContactForm = () => {
           placeholder='Name'
           className='w-full px-4 py-2 mb-2 mt-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
-        <label htmlFor='email' className=''>{errors.email?.message || 'Email'}</label>
+        <label htmlFor='email' className=''>
+          {errors.email?.message || 'Email'}
+        </label>
         <input
           type='email'
           id='email'
@@ -86,7 +90,9 @@ const ContactForm = () => {
           placeholder='Email address'
           className='w-full px-4 py-2 mb-2 mt-1 rounded drop-shadow bg-dgray placeholder:opacity-40'
         />
-        <label htmlFor='message' className=''>{errors.message?.message || 'Message'}</label>
+        <label htmlFor='message' className=''>
+          {errors.message?.message || 'Message'}
+        </label>
         <textarea
           rows='5'
           id='message'
@@ -97,8 +103,17 @@ const ContactForm = () => {
         <div className='flex'>
           <p className='w-62 text-xs w-2/3'>
             This site is protected by reCAPTCHA and the Google
-            <a className='underline hover:text-white m-1' href='https://policies.google.com/privacy'>Privacy Policy</a> and
-            <a className='underline hover:text-white m-1' href='https://policies.google.com/terms'>
+            <a
+              className='underline hover:text-white m-1'
+              href='https://policies.google.com/privacy'
+            >
+              Privacy Policy
+            </a>{' '}
+            and
+            <a
+              className='underline hover:text-white m-1'
+              href='https://policies.google.com/terms'
+            >
               Terms of Service
             </a>{' '}
             apply.
