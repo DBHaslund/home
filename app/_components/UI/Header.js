@@ -64,6 +64,7 @@ const Header = () => {
           <button
             onClick={mobileMenuHandler}
             className={`mx-8 transition-opacity ease-in duration-500 opacity-100 ${mobileMenu && 'opacity-0'}`}
+            aria-label='Menu'
           >
             <FaBars />
           </button>

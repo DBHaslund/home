@@ -42,6 +42,7 @@ const ReturnTopBtn = () => {
       initial='hide'
       animate={controls}
       onClick={scrollToTop}
+      aria-label='Return to top'
     >
       <FaArrowUp />
     </motion.button>

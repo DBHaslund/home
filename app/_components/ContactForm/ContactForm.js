@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import sendMail from '../../_utils/sendMail';
 import validateRecaptcha from '../../_utils/validateRecaptcha';
-import ReCAPTCHA from 'react-google-recaptcha';
+import Captcha from 'react-google-recaptcha';
 
 const ContactForm = () => {
   const {
@@ -112,7 +112,7 @@ const ContactForm = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-        <ReCAPTCHA
+        <Captcha
           ref={recaptchaRef}
           size='invisible'
           sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}

@@ -11,7 +11,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
-      <ReturnTopBtn />      
+      <ReturnTopBtn />
     </main>
   );
 };
