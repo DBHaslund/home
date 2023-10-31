@@ -9,7 +9,7 @@ export const POST = async (req, res) => {
     to: process.env.EMAIL_RECIEVE,
     subject: `Website contact form - ${body.name}`,
     text: body.message,
-    html: `<p>From: ${body.name}</p> <br> <p>Email: ${body.email}</p> <br> <p>${body.message}</p>`,
+    html: `<p>From: ${body.name}</p> <br> <p>Email: ${body.email}</p> <br> <h3>Message:</h3> <br> <p>${body.message}</p>`,
   };
 
   const contactEmail = nodemailer.createTransport({
