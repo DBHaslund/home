@@ -22,7 +22,7 @@ export const POST = async (req, res) => {
   });
 
   try {
-    contactEmail.sendMail(composedMessage);
+    await contactEmail.sendMail(composedMessage);
     return NextResponse.json({
       message: 'Message sent',
       success: true,
