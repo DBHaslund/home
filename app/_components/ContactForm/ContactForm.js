@@ -30,7 +30,7 @@ const ContactForm = () => {
     recaptchaRef.current.reset();
 
     const response = await validateRecaptcha(recaptchaResponse);
-    console.log(response);
+    
     if (response.status === 200) {
       // reCAPTCHA validation passed
       try {
