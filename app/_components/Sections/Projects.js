@@ -28,7 +28,7 @@ const Projects = () => {
       url: 'https://blog.bzyhas.com',
       repo: 'https://github.com/DBHaslund/blog',
       description:
-        'Blog site built using a wp backend, NextJS, React and Tailwind.',
+        'Blog site built using a wp backend, React, NextJS and Tailwind.',
       slide: '/assets/projects/blog.png',
       alt: 'Snapshot of the blog site',
     },
@@ -38,9 +38,19 @@ const Projects = () => {
       url: 'https://h-daugaard.dk/om-os/co2-udledning/',
       repo: '',
       description:
-        'Form and result page built in regular javascript and css as a plugin for wordpress, interacting with an api for the results.',
+        'Form and result page built in regular javascript and css as a plugin for wordpress, interacting with an API for the results.',
       slide: '/assets/projects/co2form.png',
       alt: 'Snapshot of the form',
+    },
+    {
+      id: 'urlsnip',
+      name: 'URLSnip, URL Shortener',
+      url: 'https://urlsnip.bzyhas.com',
+      repo: 'https://github.com/DBHaslund/urlsnip',
+      description:
+        'URL shortener using React, NextJS and tailwind, utilizing the short.io API. Saves history to localstorage.',
+      slide: '/assets/projects/urlsnip.png',
+      alt: 'Snapshot of the site',
     },
   ];
 
