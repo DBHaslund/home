@@ -9,9 +9,9 @@ const Intro = () => {
         <Image
           src='/assets/pfp.png'
           alt='profile picture'
-          width={100}
-          height={100}
-          className='mx-auto mt-12 mb-32 pfp pfp-ani rounded-full'
+          width={200}
+          height={200}
+          className='mx-auto mb-32 pfp pfp-ani rounded-full'
         />
       </div>
       <h2 className='text-center text-3xl font-semibold'>
