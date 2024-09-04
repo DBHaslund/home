@@ -22,7 +22,7 @@ const Header = () => {
         onClick={mobileMenuHandler}
         replace
         shallow
-        className='hover:text-white'
+        className='hover:text-white link'
       >
         Home
       </Link>
@@ -31,7 +31,7 @@ const Header = () => {
         onClick={mobileMenuHandler}
         replace
         shallow
-        className='hover:text-white'
+        className='hover:text-white link'
       >
         About
       </Link>
@@ -40,7 +40,7 @@ const Header = () => {
         onClick={mobileMenuHandler}
         replace
         shallow
-        className='hover:text-white'
+        className='hover:text-white link'
       >
         Projects
       </Link>
@@ -49,7 +49,7 @@ const Header = () => {
         onClick={mobileMenuHandler}
         replace
         shallow
-        className='hover:text-white'
+        className='hover:text-white link'
       >
         Contact
       </Link>

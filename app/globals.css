@@ -22,6 +22,29 @@
     margin: 4rem;
     padding: 4rem 0;
   }
+  .link{
+    position: relative;
+  }
+  
+  .link:after{
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 3px;
+    border-radius: 1rem;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--cteal);
+    transition: width .2s ease;
+    -webkit-transition: width .2s ease;
+  }
+   
+  .link:hover:after{
+    width: 100%;
+    left: 0;
+    background: var(--cteal);
+  }
 
   .pfp {
     --pfp-main: color-mix(in srgb, #009193 50%, transparent);
