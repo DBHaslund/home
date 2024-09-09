@@ -11,7 +11,7 @@ const Project = (props) => {
           alt={props.alt}
           width={300}
           height={150}
-          className='m-auto w-[300px] h-[150px] object-cover'
+          className='m-auto w-[300px] h-[150px] object-cover transition-all duration-200 scale-100 hover:scale-95 hover:opacity-80'
         />
       </Link>
       <div className='flex justify-center gap-16 py-2 underline'>

@@ -15,49 +15,56 @@ const About = () => {
           CSS/JS, and since then I&apos;ve delved into ReactJS, NextJS,
           Tailwind, as well as a bit of Wordpress.
         </p>
-        <p>
-          I&apos;m always trying to improve my skills. I&apos;m currently
-          relatively comfortable with:
-        </p>
-        <ul>
-          <li className='flex p-1'>
-            <i className='text-icon'>
-              <TiHtml5 />
-            </i>
-            HTML
-          </li>
-          <li className='flex p-1'>
-            <i className='text-icon'>
-              <TiCss3 />
-            </i>
-            CSS
-          </li>
-          <li className='flex p-1'>
-            <i className='text-icon'>
-              <RiJavascriptFill />
-            </i>
-            Javascript
-          </li>
-          <li className='flex p-1'>
-            <i className='text-icon'>
-              <RiReactjsLine />
-            </i>
-            ReactJS
-          </li>
-          <li className='flex p-1'>
-            <i className='text-icon'>
-              <TbBrandNextjs />
-            </i>
-            NextJS
-          </li>
-          <li className='flex p-1'>
-            <i className='text-icon'>
-              <RiGithubFill />
-            </i>
-            Github
-          </li>
-        </ul>
-        <p>My main focus recently has been projects built using NextJS.</p>
+        <div className='items-center'>
+          <p className='text-center'>
+            I&apos;m always trying to improve my skills. I&apos;m currently
+            relatively comfortable with:
+          </p>
+          <ul className=''>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <TiHtml5 />
+              </i>
+              HTML
+            </li>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <TiCss3 />
+              </i>
+              CSS
+            </li>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <RiJavascriptFill />
+              </i>
+              Javascript
+            </li>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <RiReactjsLine />
+              </i>
+              ReactJS
+            </li>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <TbBrandNextjs />
+              </i>
+              NextJS
+            </li>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <RiReactjsLine />
+              </i>
+              React Native
+            </li>
+            <li className='flex p-1'>
+              <i className='text-icon'>
+                <RiGithubFill />
+              </i>
+              Github
+            </li>
+          </ul>
+        </div>
       </div>
     </Section>
   );
