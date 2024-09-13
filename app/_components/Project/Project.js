@@ -15,9 +15,11 @@ const Project = (props) => {
         />
       </Link>
       <div className='flex justify-center gap-16 py-2 underline'>
-        <a className='hover:text-white' href={props.url}>
-          Link
-        </a>
+        {props.url && (
+          <a className='hover:text-white' href={props.url}>
+            Link
+          </a>
+        )}
         {props.repo && (
           <a className='hover:text-white' href={props.repo}>
             Github

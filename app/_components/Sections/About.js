@@ -8,12 +8,11 @@ const About = () => {
     <Section id='about'>
       <h2 className='text-center text-3xl font-semibold'>About Me</h2>
       <div className='pt-4 px-16 md:px-32'>
-        <p className='mb-8 '>
+        <p className='mb-8 text-center'>
           After a lifelong interest in tech, dabbling with various things over
-          the years, a good friend of mine finally pushed me to actually learn
-          something concrete a couple of years ago. It started with simple
+          the years, I started learning how to code properly a few years ago. I really enjoy the process and the journey. I started with 
           CSS/JS, and since then I&apos;ve delved into ReactJS, NextJS,
-          Tailwind, as well as a bit of Wordpress.
+          Tailwind, as well as a bit of Wordpress, and most recently, React Native.
         </p>
         <p className='text-center'>
           I&apos;m always trying to improve my skills. I&apos;m currently

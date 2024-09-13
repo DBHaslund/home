@@ -52,6 +52,16 @@ const Projects = () => {
       slide: '/assets/projects/urlsnip.png',
       alt: 'Snapshot of the site',
     },
+    {
+      id: 'medicinpriser',
+      name: 'Medicinpriser',
+      url: '',
+      repo: 'https://github.com/DBHaslund/medicinpriser',
+      description:
+        'Android app to look up current medicine prices',
+      slide: '/assets/projects/medicinpriser.png',
+      alt: 'Snapshot of the site',
+    },
   ];
 
   let content = projectList.map((project) => (
